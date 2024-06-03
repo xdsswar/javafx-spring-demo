@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    # This is the SqLite Dialect extension to support @Lob
+    database-platform: xss.it.backend.extension.SqLiteDialectExtension
+    hibernate:
+      ddl-auto: update
+  main:
+    web-application-type: none
+
+
+
+
